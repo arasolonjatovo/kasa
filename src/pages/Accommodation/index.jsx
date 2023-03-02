@@ -1,3 +1,10 @@
+import Header from '../../components/Header'
+
 export default function Accommodation() {
-  return <h1>Fiche appartement</h1>
+  return (
+    <div>
+      <Header />
+      <h1>Les appartements</h1>
+    </div>
+  )
 }

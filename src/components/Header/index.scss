@@ -1,0 +1,41 @@
+@import "../../sass/variables";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 90px;
+
+    @media screen and (max-width: $small) {
+        padding: 20px;
+    }
+
+
+    & img {
+        @media screen and (max-width: $small) {
+            max-width: 120px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+
+        &>* {
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 24px;
+            margin-left: 70px;
+
+            @media screen and (max-width: $small) {
+                font-size: 12px;
+                text-transform: uppercase;
+                margin-left: 20px;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}

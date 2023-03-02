@@ -1,3 +1,10 @@
+import Header from '../../components/Header'
+
 export default function Error() {
-  return <h1>Error</h1>
+  return (
+    <div>
+      <Header />
+      <h1>Error</h1>
+    </div>
+  )
 }

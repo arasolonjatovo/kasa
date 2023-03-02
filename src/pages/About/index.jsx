@@ -1,3 +1,10 @@
+import Header from '../../components/Header'
+
 export default function About() {
-  return <h1>A propos</h1>
+  return (
+    <div>
+      <Header />
+      <h1>A propos</h1>
+    </div>
+  )
 }
