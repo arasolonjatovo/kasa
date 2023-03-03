@@ -1,0 +1,36 @@
+@import '../../sass/variables';
+
+.accommodation {
+    border-radius: 25px;
+    position: relative;
+    height: 390px;
+
+    @media screen and (max-width: $small) {
+        border-radius: 15px;
+        height: 200px;
+    }
+
+    & img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: inherit;
+        height: inherit;
+    }
+
+    &__title {
+        position: absolute;
+        color: white;
+        bottom: 10px;
+        left: 30px;
+        text-decoration: none;
+    }
+
+    &__layer {
+        background-image: $gradient;
+        position: absolute;
+        align-items: center;
+        bottom: 0;
+        display: flex;
+    }
+}
