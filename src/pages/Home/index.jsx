@@ -5,6 +5,7 @@ import { accommodationList } from '../../datas/accommodationList'
 import Header from '../../components/Header'
 import Banner from '../../components/Banner'
 import Card from '../../components/Card'
+import Footer from '../../components/Footer'
 
 import './index.scss'
 
@@ -28,6 +29,7 @@ export default function Home() {
           </div>
         ))}
       </section>
+      <Footer />
     </div>
   )
 }
