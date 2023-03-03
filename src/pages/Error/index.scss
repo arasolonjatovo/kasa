@@ -1,0 +1,28 @@
+@import '../../sass/variables';
+
+.error {
+    text-align: center;
+    color: $primary-color;
+
+    & h1 {
+        font-size: 288px;
+
+        @media screen and (max-width: $small) {
+            font-size: 96px;
+        }
+    }
+
+    & h2 {
+        margin-top: -200px;
+        margin-bottom: 250px;
+
+        @media screen and (max-width: $small) {
+            margin-top: 0;
+            margin-bottom: 150px;
+        }
+    }
+
+    &__anchor {
+        color: $primary-color;
+    }
+}
