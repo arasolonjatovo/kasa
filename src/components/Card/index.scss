@@ -5,7 +5,7 @@
     position: relative;
     height: 390px;
 
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: $medium) {
         border-radius: 15px;
         height: 200px;
     }
