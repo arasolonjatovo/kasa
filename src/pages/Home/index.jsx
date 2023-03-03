@@ -7,7 +7,11 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Banner imageUrl={imageBanner} desc="image avec des falaises en fond" />
+      <Banner
+        imageUrl={imageBanner}
+        desc="image avec des falaises en fond"
+        textLayout="Chez vous, partout et ailleurs"
+      />
     </div>
   )
 }

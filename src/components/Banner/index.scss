@@ -5,7 +5,7 @@
     border-radius: 20px;
     background-color: white;
     height: 260px;
-    // width: 100%;
+    position: relative;
 
     @media screen and (max-width: $small) {
         margin: 20px;
@@ -15,7 +15,16 @@
         border-radius: inherit;
         height: inherit;
         object-fit: cover;
-        object-position: center 70%;
+        object-position: center 72%;
         width: 100%;
+    }
+
+    &__text-layout {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: 500;
     }
 }
