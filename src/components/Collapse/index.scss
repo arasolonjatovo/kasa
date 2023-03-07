@@ -1,0 +1,43 @@
+@import '../../sass/variables';
+
+.collapse {
+    margin: 50px 300px;
+    border-radius: 8px;
+    background-color: $secondary-color;
+    font-size: 24px;
+    color: $primary-color;
+
+    @media screen and (max-width: $small) {
+        margin: 30px 20px;
+        font-size: 13px;
+    }
+
+    @media screen and (min-width: $small) and (max-width: $medium) {
+        margin: 40px 90px;
+    }
+
+    &__title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $primary-color;
+        color: white;
+        padding: 0 20px;
+        border-radius: 8px;
+        font-size: 24px;
+
+        @media screen and (max-width: $small) {
+            font-size: 13px;
+        }
+    }
+
+    &__desc {
+        padding: 30px 20px;
+        line-height: 34px;
+
+        @media screen and (max-width: $small) {
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+}
