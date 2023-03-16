@@ -1,0 +1,9 @@
+.about {
+    &__collapses {
+        margin: 50px 90px;
+
+        &>* {
+            margin-bottom: 30px;
+        }
+    }
+}
