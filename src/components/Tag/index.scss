@@ -1,0 +1,27 @@
+@import '../../sass/variables';
+
+.tag {
+    background-color: $primary-color;
+    padding: 0 40px;
+    height: 30px;
+    width: fit-content;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: $small) {
+        padding: 0 20px;
+    }
+
+    & p {
+        color: white;
+        font-size: 14px;
+
+        @media screen and (max-width: $small) {
+            font-size: 10px;
+        }
+    }
+}
