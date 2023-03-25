@@ -7,7 +7,7 @@
     align-items: center;
     position: relative;
 
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: $medium) {
         margin: 0 15px;
         justify-content: flex-start;
         align-items: flex-start;
@@ -16,7 +16,7 @@
 }
 
 .informations {
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: $medium) {
         margin-bottom: 20px;
     }
 
@@ -24,7 +24,7 @@
         font-weight: 500;
         color: $primary-color;
 
-        @media screen and (max-width: $small) {
+        @media screen and (max-width: $medium) {
             font-size: 18px;
         }
     }
@@ -35,7 +35,7 @@
         color: $primary-color;
         margin-bottom: 30px;
 
-        @media screen and (max-width: $small) {
+        @media screen and (max-width: $medium) {
             font-size: 14px;
         }
     }
@@ -57,11 +57,11 @@
     right: 0;
     font-size: 30px;
 
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: $medium) {
         font-size: 18px;
     }
 
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: $medium) {
         position: relative;
     }
 
@@ -75,7 +75,7 @@
 }
 
 .owner {
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: $medium) {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -91,7 +91,7 @@
         justify-content: space-between;
         align-items: center;
 
-        @media screen and (max-width: $small) {
+        @media screen and (max-width: $medium) {
             position: relative;
         }
     }
@@ -104,10 +104,9 @@
         object-position: center;
         margin-left: 20px;
 
-        @media screen and (max-width: $small) {
+        @media screen and (max-width: $medium) {
             width: 40px;
             height: 40px;
-            margin-left: 10px;
         }
     }
 
@@ -117,6 +116,13 @@
         font-size: 22px;
         text-align: right;
         width: 100px;
+
+        @media screen and (max-width: $medium) {
+            font-size: 14px;
+            width: 60px;
+            text-align: right;
+            align-items: end;
+        }
     }
 }
 
@@ -126,9 +132,10 @@
     margin: 50px 90px;
     column-gap: 50px;
 
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: $medium) {
         grid-template-columns: 1fr;
-        margin: 0;
+        margin: 15px;
+        row-gap: 20px;
     }
 
     & ul {

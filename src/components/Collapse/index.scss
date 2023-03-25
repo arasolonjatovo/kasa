@@ -1,7 +1,6 @@
 @import '../../sass/variables';
 
 .collapse {
-    // margin: 50px 300px;
     max-height: max-content;
     border-radius: 8px;
     background-color: $secondary-color;
@@ -9,12 +8,7 @@
     color: $primary-color;
 
     @media screen and (max-width: $small) {
-        margin: 30px 20px;
         font-size: 13px;
-    }
-
-    @media screen and (min-width: $small) and (max-width: $medium) {
-        margin: 40px 90px;
     }
 
     &__title-container {

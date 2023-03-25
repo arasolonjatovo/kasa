@@ -4,12 +4,8 @@
     &__collapses {
         margin: 50px 90px;
 
-        @media screen and (max-width: $small) {
-            margin: 0;
-        }
-
-        @media screen and (min-width: $small) and (max-width: $medium) {
-            margin: 0
+        @media screen and (max-width: $medium) {
+            margin: 20px;
         }
 
         &>* {

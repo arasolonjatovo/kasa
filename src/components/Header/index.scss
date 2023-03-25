@@ -6,13 +6,13 @@
     align-items: center;
     padding: 50px 90px;
 
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: $medium) {
         padding: 20px;
     }
 
 
     & img {
-        @media screen and (max-width: $small) {
+        @media screen and (max-width: $medium) {
             max-width: 120px;
         }
     }
@@ -26,7 +26,7 @@
             font-size: 24px;
             margin-left: 70px;
 
-            @media screen and (max-width: $small) {
+            @media screen and (max-width: $medium) {
                 font-size: 12px;
                 text-transform: uppercase;
                 margin-left: 20px;
