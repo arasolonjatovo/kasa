@@ -18,7 +18,9 @@ export default function Collapse({ label, text }) {
               onClick={() => setIsOpen(false)}
             />
           </div>
-          <p className="collapse__desc">{text}</p>
+          <div>
+            <div className="collapse__desc">{text}</div>
+          </div>
         </div>
       ) : (
         <div className="collapse">

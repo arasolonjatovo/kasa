@@ -12,6 +12,7 @@ import './index.scss'
 import imageBanner from '../../assets/bg-falaise.png'
 
 export default function Home() {
+  document.title = 'Accueil - Trouvez le logement qui vous correspond'
   return (
     <div>
       <Header />

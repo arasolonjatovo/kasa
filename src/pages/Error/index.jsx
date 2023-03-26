@@ -4,6 +4,7 @@ import Header from '../../components/Header'
 import './index.scss'
 
 export default function Error() {
+  document.title = "Oups ! Cette page n'existe pas"
   return (
     <div>
       <Header />

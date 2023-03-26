@@ -10,6 +10,7 @@ import { aboutList } from '../../datas/aboutList'
 import './index.scss'
 
 export default function About() {
+  document.title = 'À propos - Nous nous engageons'
   return (
     <div className="about">
       <Header />

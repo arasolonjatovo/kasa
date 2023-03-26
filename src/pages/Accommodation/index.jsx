@@ -16,7 +16,7 @@ import './index.scss'
 export default function Accommodation() {
   let { id } = useParams()
   const found = accommodationList.find((element) => element.id === id)
-
+  document.title = found.title
   return (
     <div>
       <Header />
