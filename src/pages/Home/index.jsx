@@ -25,7 +25,7 @@ export default function Home() {
         {accommodationList.map((acc, index) => (
           <div className="card_acc" key={index}>
             <Link className="card__link" to={`/accommodation/${acc.id}`}>
-              <Card bgUrl={acc.cover} title={acc.title} />
+              <Card imageUrl={acc.cover} title={acc.title} />
             </Link>
           </div>
         ))}
