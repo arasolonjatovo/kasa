@@ -31,11 +31,11 @@
                 text-transform: uppercase;
                 margin-left: 20px;
             }
-
-            &:hover {
-                text-decoration: underline;
-            }
         }
+    }
+
+    &__link--active {
+        text-decoration: underline;
     }
 
 }
