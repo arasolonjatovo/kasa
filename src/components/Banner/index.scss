@@ -14,10 +14,9 @@
 
     &.banner__mobile {
         @media screen and (max-width: $medium) {
-
             height: 110px;
             margin: 20px;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
     }
 
