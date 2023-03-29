@@ -17,6 +17,7 @@ export default function Home() {
     <div>
       <Header />
       <Banner
+        className="banner banner__mobile"
         imageUrl={imageBanner}
         desc="image avec des falaises en fond"
         textLayout="Chez vous, partout et ailleurs"
@@ -25,7 +26,7 @@ export default function Home() {
         {accommodationList.map((acc, index) => (
           <div className="card_acc" key={index}>
             <Link className="card__link" to={`/accommodation/${acc.id}`}>
-              <Card imageUrl={acc.cover} title={acc.title} />
+              <Card imgUrl={acc.cover} title={acc.title} />
             </Link>
           </div>
         ))}

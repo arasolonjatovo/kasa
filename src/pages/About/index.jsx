@@ -14,7 +14,11 @@ export default function About() {
   return (
     <div className="about">
       <Header />
-      <Banner imageUrl={imageBanner} desc="Image de fond avec des montagnes" />
+      <Banner
+        className="banner"
+        imageUrl={imageBanner}
+        desc="Image de fond avec des montagnes"
+      />
       <div className="about__collapses">
         {aboutList.map((item, index) => (
           <Collapse label={item.label} text={item.text} key={index} />

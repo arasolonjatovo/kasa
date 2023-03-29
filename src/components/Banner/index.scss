@@ -12,6 +12,15 @@
         margin-bottom: 70px;
     }
 
+    &.banner__mobile {
+        @media screen and (max-width: $medium) {
+
+            height: 110px;
+            margin: 20px;
+            margin-bottom: 50px;
+        }
+    }
+
     &__bg {
         border-radius: inherit;
         height: inherit;
@@ -27,5 +36,11 @@
         transform: translate(-50%, -50%);
         color: white;
         font-weight: 500;
+
+        @media screen and (max-width: $medium) {
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+        }
     }
 }
