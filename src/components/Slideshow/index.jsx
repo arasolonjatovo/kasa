@@ -1,9 +1,7 @@
 import { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faChevronLeft,
-  faChevronRight,
-} from '@fortawesome/free-solid-svg-icons'
+
+import chevronRight from '../../assets/icons/chevronRight.png'
+import chevronLeft from '../../assets/icons/chevronLeft.png'
 
 import './index.scss'
 
@@ -21,16 +19,22 @@ export default function Slideshow({ picture }) {
   return (
     <div className="slideshow">
       <img
+        className="slideshow__bg"
         src={picture[index]}
         alt="Carouselle des differentes photos de l'appartement"
       />
       {picture.length > 1 ? (
         <div className="slideshow__container">
-          <FontAwesomeIcon
-            icon={faChevronLeft}
+          <img
+            src={chevronLeft}
+            alt="chevron gauche"
             onClick={() => handlePrevious()}
           />
-          <FontAwesomeIcon icon={faChevronRight} onClick={() => handleNext()} />
+          <img
+            src={chevronRight}
+            alt="chevron droit"
+            onClick={() => handleNext()}
+          />
         </div>
       ) : null}
 

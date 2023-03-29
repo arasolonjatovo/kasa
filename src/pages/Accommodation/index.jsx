@@ -1,8 +1,5 @@
 import { useParams } from 'react-router'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
-
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Slideshow from '../../components/Slideshow'
@@ -10,6 +7,9 @@ import Tag from '../../components/Tag'
 import Collapse from '../../components/Collapse'
 
 import { accommodationList } from '../../datas/accommodationList'
+
+import starFalse from '../../assets/icons/starFalse.svg'
+import starTrue from '../../assets/icons/starTrue.svg'
 
 import './index.scss'
 
@@ -43,12 +43,12 @@ export default function Accommodation() {
           <div className="star">
             {[...Array(5)].map((star, index) =>
               index + 1 > found.rating ? (
-                <span key={index}>
-                  <FontAwesomeIcon icon={faStar} className="star__false" />
+                <span className="star__container" key={index}>
+                  <img src={starFalse} alt="etoile vide" />
                 </span>
               ) : (
-                <span key={index}>
-                  <FontAwesomeIcon icon={faStar} className="star__true" />
+                <span className="star__container" key={index}>
+                  <img src={starTrue} alt="etoile pleine" />
                 </span>
               )
             )}

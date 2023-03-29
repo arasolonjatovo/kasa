@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+
+import chevronUp from '../../assets/icons/chevronUp.png'
+import chevronDown from '../../assets/icons/chevronDown.png'
 
 import './index.scss'
 
@@ -13,8 +13,9 @@ export default function Collapse({ label, text }) {
         <div className="collapse">
           <div className="collapse__title-container">
             <p className="collapse__tilte">{label}</p>
-            <FontAwesomeIcon
-              icon={faChevronUp}
+            <img
+              src={chevronUp}
+              alt="chevron vers le haut"
               onClick={() => setIsOpen(false)}
             />
           </div>
@@ -26,8 +27,9 @@ export default function Collapse({ label, text }) {
         <div className="collapse">
           <div className="collapse__title-container">
             <p className="collapse__tilte">{label}</p>
-            <FontAwesomeIcon
-              icon={faChevronDown}
+            <img
+              src={chevronDown}
+              alt="chevron vers le base"
               onClick={() => setIsOpen(true)}
             />
           </div>
