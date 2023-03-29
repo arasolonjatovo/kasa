@@ -24,13 +24,16 @@ export default function Slideshow({ picture }) {
         src={picture[index]}
         alt="Carouselle des differentes photos de l'appartement"
       />
-      <div className="slideshow__container">
-        <FontAwesomeIcon
-          icon={faChevronLeft}
-          onClick={() => handlePrevious()}
-        />
-        <FontAwesomeIcon icon={faChevronRight} onClick={() => handleNext()} />
-      </div>
+      {picture.length > 1 ? (
+        <div className="slideshow__container">
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            onClick={() => handlePrevious()}
+          />
+          <FontAwesomeIcon icon={faChevronRight} onClick={() => handleNext()} />
+        </div>
+      ) : null}
+
       <p className="slideshow__bulletPoint">
         {index + 1}/{picture.length}
       </p>
